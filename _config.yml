@@ -22,7 +22,7 @@ title: "My Portfolio"
 email: yuxuanm4@illinois.edu
 description: "A showcase of my work and projects."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://https://yuxuanma-sys.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://yuxuanma-sys.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
