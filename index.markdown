@@ -31,6 +31,18 @@ title: "Home"
     margin: 0;
   }
 
+  /* Section title styling */
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  .section-title i {
+    margin-right: 0.5rem;
+  }
+
   /* Carousel styling */
   .carousel-container {
     position: relative;
@@ -96,6 +108,79 @@ title: "Home"
     right: 10px;
   }
 
+  /* Skills section styling */
+  .skills-section {
+    background-color: #2F3640; /* Dark background */
+    padding: 2rem;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #c0c0c0;
+  }
+  .skills-section h2 i {
+    margin-right: 0.5rem;
+  }
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .skill-column {
+    width: 45%;
+    margin-bottom: 2rem;
+    min-width: 280px; /* ensure some minimum width for smaller screens */
+  }
+  .skill-bar {
+    margin-bottom: 1.5rem;
+  }
+  .skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  .bar {
+    background-color: #444;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    height: 25px;
+  }
+  .progress {
+    background: linear-gradient(to right, #ff477e, #ff61e7);
+    height: 100%;
+    text-align: right;
+    padding-right: 5px;
+    line-height: 25px;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  /* Other skills chips */
+  .other-skills {
+    margin-top: 2rem;
+  }
+  .other-skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .skill-chip {
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    margin: 0.25rem;
+    font-size: 0.9rem;
+  }
+
   /* Contact section styling */
   .contact-section {
     text-align: center;
@@ -120,6 +205,9 @@ title: "Home"
     <p>Discover my favorite projects, learn more about me, and get in touch!</p>
   </div>
 
+  <!-- Projects Section Title -->
+<h2 class="section-title"><i class="fas fa-toolbox"></i> Projects</h2>
+
   <!-- Carousel Section -->
   <div class="carousel-container">
     <button class="carousel-btn left" id="prevBtn">&#10094;</button>
@@ -127,12 +215,12 @@ title: "Home"
       <a href="/projects/deepseekcoder.html" class="carousel-item">
         <i class="fas fa-code"></i>
         <h3>Enhancing Code Reasoning and Test Generation</h3>
-        <p>Improved code reasoning & test generation via tailored prompt engineering.</p>
+        <p>Improved code reasoning &amp; test generation via tailored prompt engineering.</p>
       </a>
       <a href="/projects/reproducibility.html" class="carousel-item">
         <i class="fas fa-vial"></i>
         <h3>Reproducibility Research for Research Software</h3>
-        <p>Docker-based solutions for replicating research artifacts & standardizing environments.</p>
+        <p>Docker-based solutions for replicating research artifacts &amp; standardizing environments.</p>
       </a>
       <a href="/projects/steamgenie.html" class="carousel-item">
         <i class="fas fa-gamepad"></i>
@@ -142,27 +230,27 @@ title: "Home"
       <a href="/projects/robotic-task-execution.html" class="carousel-item">
         <i class="fas fa-robot"></i>
         <h3>Autonomous Multi-Step Robotic Task Execution</h3>
-        <p>A control system for a CRS robot arm, enabling precise navigation & obstacle avoidance.</p>
+        <p>A control system for a CRS robot arm, enabling precise navigation &amp; obstacle avoidance.</p>
       </a>
       <a href="/projects/habit-forming-keystation.html" class="carousel-item">
         <i class="fas fa-keyboard"></i>
         <h3>Habit-Forming KeyStation</h3>
-        <p>A device leveraging sensor fusion & RF tracking to help users consistently find their keys.</p>
+        <p>A device leveraging sensor fusion &amp; RF tracking to help users consistently find their keys.</p>
       </a>
       <a href="/projects/fpga-flappy-bird.html" class="carousel-item">
         <i class="fas fa-bolt"></i>
         <h3>Dynamic "Flappy Bird" on FPGA</h3>
-        <p>Hardware-level logic for real-time rendering & interaction, implementing Flappy Bird on an FPGA.</p>
+        <p>Hardware-level logic for real-time rendering &amp; interaction, implementing Flappy Bird on an FPGA.</p>
       </a>
       <a href="/projects/ros-robotics-programming.html" class="carousel-item">
         <i class="fas fa-cogs"></i>
         <h3>ROS Robotics Programming</h3>
-        <p>Robotic manipulation & navigation in a 6-DOF environment using ROS.</p>
+        <p>Robotic manipulation &amp; navigation in a 6-DOF environment using ROS.</p>
       </a>
       <a href="/projects/reaction-wheel-pendulum.html" class="carousel-item">
         <i class="fas fa-balance-scale"></i>
         <h3>Reaction Wheel Pendulum</h3>
-        <p>Stabilize a pendulum at its inverted position using reaction wheel dynamics & feedback loops.</p>
+        <p>Stabilize a pendulum at its inverted position using reaction wheel dynamics &amp; feedback loops.</p>
       </a>
       <a href="/projects/video-game-sales-analysis.html" class="carousel-item">
         <i class="fas fa-chart-line"></i>
@@ -172,6 +260,85 @@ title: "Home"
     </div>
     <button class="carousel-btn right" id="nextBtn">&#10095;</button>
   </div>
+
+  <!-- Skills Section -->
+  <section class="skills-section">
+    <h2><i class="fas fa-wrench"></i> My Skills</h2>
+    <div class="skills-container">
+      <!-- Left column -->
+      <div class="skill-column">
+        <!-- C/C++ -->
+        <div class="skill-bar">
+          <div class="skill-label">
+            <span>C/C++</span>
+            <span>70%</span>
+          </div>
+          <div class="bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-bar">
+          <div class="skill-label">
+            <span>Python</span>
+            <span>80%</span>
+          </div>
+          <div class="bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <!-- Data Structures & Algorithms -->
+        <div class="skill-bar">
+          <div class="skill-label">
+            <span>Data Structure &amp; Algorithms</span>
+            <span>70%</span>
+          </div>
+          <div class="bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="skill-column">
+        <!-- JavaScript/TypeScript -->
+        <div class="skill-bar">
+          <div class="skill-label">
+            <span>JavaScript/TypeScript</span>
+            <span>50%</span>
+          </div>
+          <div class="bar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+        </div>
+
+        <!-- Matlab -->
+        <div class="skill-bar">
+          <div class="skill-label">
+            <span>Matlab</span>
+            <span>50%</span>
+          </div>
+          <div class="bar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Skills -->
+    <div class="other-skills">
+      <h3>Other Skills</h3>
+      <span class="skill-chip">Machine Learning</span>
+      <span class="skill-chip">Embedded Systems</span>
+      <span class="skill-chip">Docker</span>
+      <span class="skill-chip">AWS</span>
+      <span class="skill-chip">Git</span>
+      <span class="skill-chip">Data Analysis</span>
+      <span class="skill-chip">Parellel Programming</span>
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <div class="contact-section">
