@@ -327,7 +327,7 @@ async function processUserQuery(userInput) {
       <p>View the project repository</p>
     </a>
     
-    <a href="/assets/files/steamgenie-architecture.md" class="resource-card">
+    <a href="/assets/files/steamgenie-architecture.html" class="resource-card">
       <h3>📝 Architecture Document</h3>
       <p>Technical overview and system design</p>
     </a>
