@@ -436,6 +436,347 @@ title: "Home"
       width: 240px;
     }
   }
+
+  /* About Me Section Styling */
+  .about-section {
+    margin: 5rem 0;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .about-image {
+    flex: 0 0 300px;
+  }
+  
+  .image-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid transparent;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, var(--primary-color), var(--accent-color));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.05);
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more-btn i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    color: var(--accent-color);
+  }
+  
+  .read-more-btn:hover i {
+    transform: translateX(5px);
+  }
+
+  /* Education Timeline Styling */
+  .education-section {
+    margin: 5rem 0;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 2rem 0;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 0 3rem 2rem 0;
+    text-align: right;
+    animation: slideRight 0.6s ease-in-out;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 50%;
+    padding: 0 0 2rem 3rem;
+    text-align: left;
+    animation: slideLeft 0.6s ease-in-out;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    top: 0;
+    right: -12px;
+    z-index: 1;
+    box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.2);
+  }
+  
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: -12px;
+    right: auto;
+  }
+  
+  .timeline-date {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    color: var(--white);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-content {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .timeline-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .timeline-content p {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  @keyframes slideRight {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes slideLeft {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  /* Testimonials Styling */
+  .testimonials-section {
+    margin: 5rem 0;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .testimonial::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    top: 0;
+    left: 0;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .quote {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    opacity: 0.2;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .testimonial p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    text-align: right;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 1rem;
+  }
+  
+  .author-name {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.2rem;
+  }
+  
+  .author-title {
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+
+  /* Responsive adjustments for new sections */
+  @media screen and (max-width: 992px) {
+    .timeline::before {
+      left: 30px;
+    }
+    
+    .timeline-item {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 6rem;
+      text-align: left;
+    }
+    
+    .timeline-item:nth-child(even) {
+      left: 0;
+      padding-left: 6rem;
+    }
+    
+    .timeline-dot {
+      left: 28px;
+      right: auto;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-dot {
+      left: 28px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      padding: 2rem;
+    }
+    
+    .about-image {
+      flex: none;
+      margin-bottom: 2rem;
+    }
+    
+    .timeline-item {
+      padding-left: 5rem;
+    }
+    
+    .timeline-item:nth-child(even) {
+      padding-left: 5rem;
+    }
+    
+    .testimonials-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .testimonial {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .timeline-item {
+      padding-left: 4rem;
+    }
+    
+    .timeline-item:nth-child(even) {
+      padding-left: 4rem;
+    }
+    
+    .timeline::before {
+      left: 20px;
+    }
+    
+    .timeline-dot {
+      left: 18px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-dot {
+      left: 18px;
+    }
+  }
 </style>
 
 <!-- HTML Content -->
@@ -585,6 +926,72 @@ title: "Home"
     </div>
   </section>
 
+  <!-- About Me Section -->
+  <div class="about-section">
+    <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <div class="image-container">
+          <img src="{{ '/assets/profile.jpg' | relative_url }}" alt="Yuxuan Ma" onerror="this.src='https://via.placeholder.com/300?text=Profile+Photo'">
+        </div>
+      </div>
+      <div class="about-text">
+        <p>Hello! I'm a graduate student in Computer Science with a background in Electrical Engineering at the University of Illinois Urbana-Champaign. My passion lies at the intersection of software engineering, robotics, and AI.</p>
+        <p>With experience in full-stack development, embedded systems, and AI applications, I enjoy building solutions that bridge the gap between hardware and software. My academic journey has equipped me with strong analytical skills and a methodical approach to problem-solving.</p>
+        <a href="/about/" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education Timeline Section -->
+  <div class="education-section">
+    <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024 - 2025</div>
+        <div class="timeline-content">
+          <h3>Master of Computer Science</h3>
+          <p>University of Illinois Urbana-Champaign</p>
+          <p><i class="fas fa-award"></i> GPA: 4.00/4.00</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021 - 2024</div>
+        <div class="timeline-content">
+          <h3>B.S. in Electrical Engineering, Minor in Computer Science</h3>
+          <p>University of Illinois Urbana-Champaign</p>
+          <p><i class="fas fa-award"></i> GPA: 3.65/4.00, Core GPA: 3.857/4.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="testimonials-section">
+    <h2 class="section-title"><i class="fas fa-comment-dots"></i> Testimonials</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <div class="quote"><i class="fas fa-quote-left"></i></div>
+        <p>Yuxuan demonstrated exceptional technical skills and problem-solving abilities during his internship. His contributions to our data pipeline significantly improved our operational efficiency.</p>
+        <div class="testimonial-author">
+          <p class="author-name">- Jane Smith</p>
+          <p class="author-title">Senior Engineer at Horus Intelligence Solutions</p>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="quote"><i class="fas fa-quote-left"></i></div>
+        <p>I was impressed by Yuxuan's dedication and technical prowess. His approach to complex problems is methodical and innovative, making him a valuable team member on any project.</p>
+        <div class="testimonial-author">
+          <p class="author-name">- Dr. John Doe</p>
+          <p class="author-title">Assistant Professor, UIUC</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Contact Section -->
   <div class="contact-section">
     <p>Interested in collaborating or have questions?</p>
@@ -665,5 +1072,37 @@ title: "Home"
     // Animate on load and scroll
     animateProgressBars();
     window.addEventListener('scroll', animateProgressBars);
+
+    // Function to check if an element is in viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+    
+    // Animate timeline items when they come into view
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    function animateTimelineItems() {
+      timelineItems.forEach(item => {
+        if (isInViewport(item) && !item.classList.contains('animated')) {
+          item.classList.add('animated');
+          item.style.opacity = '1';
+        }
+      });
+    }
+    
+    // Set initial state
+    timelineItems.forEach(item => {
+      item.style.opacity = '0';
+    });
+    
+    // Animate on load and scroll
+    animateTimelineItems();
+    window.addEventListener('scroll', animateTimelineItems);
   });
 </script>
