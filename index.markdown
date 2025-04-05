@@ -974,19 +974,19 @@ title: "Home"
     <div class="testimonials-container">
       <div class="testimonial">
         <div class="quote"><i class="fas fa-quote-left"></i></div>
-        <p>Yuxuan demonstrated exceptional technical skills and problem-solving abilities during his internship. His contributions to our data pipeline significantly improved our operational efficiency.</p>
+        <p>Yuxuan consistently impresses with his sharp technical instincts and thoughtful problem-solving. Whether it's reverse engineering, building secure systems, or debugging complex issues, he brings both depth, reliability, and a strong sense of curiosity to the table. Working with him has been both inspiring and rewarding.</p>
         <div class="testimonial-author">
-          <p class="author-name">- Jane Smith</p>
-          <p class="author-title">Senior Engineer at Horus Intelligence Solutions</p>
+          <p class="author-name">- Eddie Gao</p>
+          <p class="author-title">Master of Science in Machine Learning Student at Carnegie Mellon University</p>
         </div>
       </div>
       
       <div class="testimonial">
         <div class="quote"><i class="fas fa-quote-left"></i></div>
-        <p>I was impressed by Yuxuan's dedication and technical prowess. His approach to complex problems is methodical and innovative, making him a valuable team member on any project.</p>
+        <p>I had the pleasure of working alongside Yuxuan on numerous course projects. Collaborating with him was always enjoyable, as he consistently brought creative ideas and a great sense of humor to our work. Additionally, his strong execution capabilities ensured our projects always moved forward effectively.</p>
         <div class="testimonial-author">
-          <p class="author-name">- Dr. John Doe</p>
-          <p class="author-title">Assistant Professor, UIUC</p>
+          <p class="author-name">- Chi Gui</p>
+          <p class="author-title">Research Assistant at University of Illinois Urbana Champaign</p>
         </div>
       </div>
     </div>
