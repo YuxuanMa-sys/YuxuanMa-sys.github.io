@@ -257,6 +257,11 @@ title: "Home"
         <h3>Regional Video Games Sales Analysis</h3>
         <p>Statistical modeling to uncover trends in global video game sales across regions.</p>
       </a>
+      <a href="/projects/cryptography-toolkit.html" class="carousel-item">
+        <i class="fas fa-lock"></i>
+        <h3>CryptoToolkit</h3>
+        <p>Comprehensive implementation of cryptographic primitives including encryption, digital signatures, and blockchain fundamentals.</p>
+      </a>
     </div>
     <button class="carousel-btn right" id="nextBtn">&#10095;</button>
   </div>
